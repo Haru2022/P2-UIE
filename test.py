@@ -27,7 +27,7 @@ pipeline = WaterDecouplePipeline.from_pretrained("stabilityai/stable-diffusion-2
                                                     torch_dtype=torch.float16,
                                                     ).to(device)
 
-datasets = ['EUVP','LSUI','haru_1437']
+datasets = ['EUVP','LSUI','haru_1473']
 
 for dataset in datasets:
     test_root = '/media/HDD0/haru/datasets/water-mamba/{}/raw'.format(dataset)
