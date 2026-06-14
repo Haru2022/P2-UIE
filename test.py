@@ -15,13 +15,13 @@ unet = UNet2DConditionModel.from_pretrained("HaruCloud9/P2UIE",
 
 #unet.enable_xformers_memory_efficient_attention()
 scheduler = DDPMScheduler.from_pretrained(
-            "stabilityai/stable-diffusion-2-1", 
+            "sd2-community/stable-diffusion-2-1", 
             subfolder="scheduler", 
             timestep_spacing="trailing", # set scheduler timestep spacing to trailing for later inference.
         )
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-pipeline = WaterDecouplePipeline.from_pretrained("stabilityai/stable-diffusion-2-1", #"stabilityai/stable-diffusion-2-1"
+pipeline = WaterDecouplePipeline.from_pretrained("sd2-community/stable-diffusion-2-1", 
                                                     unet = unet,
                                                     scheduler=scheduler,
                                                     torch_dtype=torch.float16,
