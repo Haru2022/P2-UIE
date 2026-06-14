@@ -1,6 +1,6 @@
 # P2-UIE
 
-This folder contains the inference script and local pipeline code for P2-UIE.
+This folder contains the official inference script and local pipeline code for P2-UIE (accepted by **Information Fusion**).
 
 ## Create the environment
 
@@ -22,4 +22,3 @@ python test.py
 ```
 
 you may modify the way of loading images for your own datasets.
-
