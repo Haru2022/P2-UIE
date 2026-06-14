@@ -15,7 +15,7 @@ pip install -r requirements.txt
 
 If you prefer a lighter setup, you can also create the environment manually with `conda create -n P2UIE python=3.10.16` and then install the pinned packages from `requirements.txt`.
 
-## test
+## Test
 
 ```bash
 python test.py
